@@ -11,6 +11,7 @@
     const root = document.getElementById('root')
     function tagMaker(type, children) {
       let element = document.createElement(children);
+      element.textContent = "테스트입니다."
       type.appendChild(element)
     }
     tagMaker(root, 'p')
